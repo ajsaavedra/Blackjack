@@ -160,10 +160,10 @@ public class Blackjack extends JFrame
 			if (myHand.calcPointCount() > 21) {
 				disableButtonsAfterWin();
 				messageTF.setText("Player bust! House wins. Try again?");
-			}else if (houseHand.calcPointCount() == 21) {
+			} else if (houseHand.calcPointCount() == 21) {
 				disableButtonsAfterWin();
 				messageTF.setText("House wins. Try again?");
-			}else if (myHand.calcPointCount() <= 21 && myHand.getNumOfCards() == 5) {
+			} else if (myHand.calcPointCount() <= 21 && myHand.getNumOfCards() == 5) {
 				disableButtonsAfterWin();
 				messageTF.setText("Congratulations! You win! Play again?");
 			}
